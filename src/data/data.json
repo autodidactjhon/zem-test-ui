@@ -1,0 +1,42 @@
+[
+  { 
+    "id": "1",
+    "title": "Kanye West",
+    "date": "1 month ago ",
+    "topic": "in Entertaiment",
+    "description": "Vestibulum diam ante, porttitor a odio eget. rhoncus neque. Aeneaneu velit libero.",
+    "likes": 64,
+    "dislikes": 36,
+    "image": "kanye.png"
+  },
+  {
+    "id": "2",
+    "title": "Mark Suckerberg",
+    "date": "1 month ago ",
+    "topic": "in Business",
+    "description": "Vestibulum diam ante, porttitor a odio eget. rhoncus neque. Aeneaneu velit libero.",
+    "likes": 48,
+    "dislikes": 52,
+    "image": "mark.png"
+  },
+  {
+    "id": "3",
+    "title": "Cristina Fernández",
+    "date": "1 month ago ",
+    "topic": "in Politics",
+    "description": "Vestibulum diam ante, porttitor a odio eget. rhoncus neque. Aeneaneu velit libero.",
+    "likes": 73,
+    "dislikes": 27,
+    "image": "cristina.png"
+  },
+  {
+    "id": "4",
+    "title": "Malala Yousafzai",
+    "date": "1 month ago ",
+    "topic": "in Entertaiment",
+    "description": "Vestibulum diam ante, porttitor a odio eget. rhoncus neque. Aeneaneu velit libero.",
+    "likes": 36,
+    "dislikes": 64,
+    "image": "malala.png"
+  }
+]
