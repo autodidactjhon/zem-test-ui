@@ -1,0 +1,60 @@
+@import "./../variables";
+@import "./../mixins";
+
+.button {
+  cursor: pointer;
+  border: none;
+  margin-right: 10px;
+  align-self: center;
+  @include font-lato-regular;
+  box-sizing: border-box;
+
+  &:active, &:focus { outline: none; }
+  &:hover { cursor: pointer; }
+
+  &.like, &.dislike {
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: center;
+    height: 35px;
+    width: 35px;
+    box-sizing: border-box;
+
+    &:active, &:focus { border: solid 1px $color-white; }
+  }
+  
+  &.like { background-color: #2ebdb5; } //TODO: variable
+  &.dislike { background-color: #feb432; } //TODO: variable
+
+  &.vote {
+    padding: 12px 18px;
+    color: $color-white;
+    border: solid 1px $color-white;
+    background-color: rgba(0, 0, 0, 0.3);;
+
+    &:active {
+      border: solid 1px black;
+      background-color: $color-white;
+      color: black;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+
+  &.submit {
+    padding: 10px 30px;
+    border: solid 3px black;
+    background-color: transparent;
+    color: black;
+    font-size: 13pt;
+    z-index: 1;
+
+    &:active {
+      border: solid 3px $color-white;
+      color: $color-white;
+    }
+  }
+}

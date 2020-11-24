@@ -1,0 +1,57 @@
+@import "./../mixins";
+
+.disclaimer {
+  background-color: #ebebeb; //TODO: variable
+  width: 100%;
+  padding: 25px;
+  display: flex;
+
+  * { margin: 0; }
+
+  .content-left {
+    min-width: 185px;
+    
+    .content-left--secondary-text {
+      @include font-lato-light;
+      font-size: 15pt;
+    }
+
+    .content-left--main-text {
+      @include font-lato-bold;
+      font-size: 25pt;
+    }
+  }
+
+  .content-right {
+    margin: 0 70px 0 5px;
+    display: flex;
+
+    .content-right-text {
+      @include font-lato-light;
+      font-size: 12pt;
+      align-self: center;
+      line-height: 23px;
+    }
+  }
+
+  .content-close {
+    height: 16px;
+    width: 16px;
+    align-self: center;
+    cursor: pointer;
+
+    &::before, &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 16px;
+      width: 2px;
+      background-color: gray;
+      margin-left: 9px;
+    }
+
+    &::before { transform: rotate(45deg); }
+
+    &::after{ transform: rotate(135deg); }
+  }
+}

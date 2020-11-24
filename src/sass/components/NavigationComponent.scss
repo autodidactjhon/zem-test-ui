@@ -1,0 +1,33 @@
+@import "./../variables.scss";
+@import "./../mixins.scss";
+
+.nav-bar {
+  height: $nav-bar-height;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0 60px;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 10;
+
+  a {
+    text-decoration: none;
+    color: $color-white;
+    cursor: pointer;
+  }
+
+  .anchor-to-home {
+    font-size: 32px;
+    align-self: center;
+    @include font-lato-regular;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    align-self: center;
+    margin: 0;
+
+    li { margin-left: 50px; }
+  }
+}

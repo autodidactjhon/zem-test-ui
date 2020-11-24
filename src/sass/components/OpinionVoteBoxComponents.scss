@@ -1,0 +1,73 @@
+@import "./../variables";
+@import "./../mixins";
+
+.vote-box-container {
+  position: absolute;
+  top: 178px;
+  left: 135px;
+
+  .vote-box-info {
+    width: 500px;
+    height: 367px;
+    background-color: rgba(75, 74, 74, 0.3);
+    backdrop-filter: blur(25px);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    color: $color-white;
+    @include font-lato-light;
+
+    .vote-box--subtitle {
+      font-size: 11pt;
+      margin-bottom: 0;
+    }
+
+    .vote-box--title {
+      font-size: 41pt;
+      @include font-lato-regular;
+      margin-top: 0;
+      line-height: 1;
+      margin-bottom: 25px;
+    }
+
+    .vote-box--description { font-size: 17pt; }
+
+    .vote-box--hiper-link {
+      a {
+        margin-left: 5px;
+        font-size: 11pt;
+
+        &:hover, &:visited { color: $color-white; }
+      }
+    }
+
+    .vote-box--text-bottom {
+      font-size: 16pt;
+      @include font-lato-bold;
+      margin-top: 35px;
+    }
+  }
+
+  .vote-box-verdict {
+    display: flex;
+    bottom: 0;
+    justify-content: space-between;
+    width: 100%;
+
+    .verdict {
+      height: 80px;
+      width: 250px;
+      display: flex;
+      justify-content: center;
+
+      &.like { background-color: rgba(46, 189, 181, 0.9); } //TODO: variable
+
+      &.dislike { background-color: rgba(254, 180, 50, 0.9); } //TODO: variable
+
+      img {
+        width: 37px;
+        height: 37px;
+        align-self: center;
+      }
+    }
+  }
+}

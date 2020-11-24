@@ -1,0 +1,7 @@
+@import "./../mixins";
+
+.title-section {
+  @include font-lato-light;
+  margin: 40px 0;
+  font-size: 30pt;
+}

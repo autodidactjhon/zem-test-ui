@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import "./variables";
+
+//Fonts
+@mixin font-lato-light {
+    font-family: 'Lato';
+    font-weight: 300;
+}
+
+@mixin font-lato-regular {
+    font-family: 'Lato';
+    font-weight: 400;
+}
+
+@mixin font-lato-bold {
+    font-family: 'Lato';
+    font-weight: 700;
+}
+
+//Media Queries
+@mixin respond-to($media) {
+  
+  @if $media == handhelds {
+    @media (max-width: $break-handheld) { @content; }
+  }
+  @else if $media == smaller {
+    @media (max-width: $break-smaller) { @content; }
+  }
+  @else if $media == medium {
+    @media (max-width: $break-medium) { @content; }
+  }
+  @else if $media == larger {
+    @media (min-width: $break-larger) { @content; }
+  }
+}

@@ -1,0 +1,80 @@
+@import "./../variables";
+@import "./../mixins";
+
+.voting-card {
+  height: 550px;
+  width: 490px;
+  margin-bottom: 44px;
+  position: relative;
+  color: $color-white;
+  @include font-lato-regular;
+
+  p, span { margin: 0; }
+
+  .votin-card-info {
+    width: 100%;
+    height: 215px;
+    position: absolute;
+    bottom: 50px;
+    padding: 0 35px;
+    box-sizing: border-box;
+
+    .votin-card-title { font-size: 34pt; }
+
+    .votin-card-subtitle {
+      font-size: 9pt;
+      margin-bottom: 10px;
+
+      .voting-card-text { @include font-lato-bold; }
+    }
+
+    .votin-card-description {
+      font-size: 12pt;
+      margin-bottom: 20px;
+    }
+
+    .votin-card-controls {
+      display: flex;
+      padding: 0 15px;
+      position: absolute;
+      bottom: 35px;
+    }
+  }
+
+  .voting-statistics {
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+
+    .voting-statistics-like, .voting-statistics-dislike {
+      display: flex;
+      padding: 0 10px;
+      box-sizing: border-box;
+
+      img {
+        width: 28px;
+        height: 28px;
+      }
+
+      span {
+        font-size: 20pt;
+        margin: 0 10px;
+      }
+
+      * { align-self: center; }
+    }
+
+    .voting-statistics-like {
+      background-color: rgba(46, 189, 181, 0.7); //TODO: constant
+      justify-content: flex-start;
+    }
+
+    .voting-statistics-dislike {
+      background-color: rgba(254, 180, 50, 0.7); //TODO: constant
+      justify-content: flex-end;
+    }    
+  }
+}
