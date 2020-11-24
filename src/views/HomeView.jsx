@@ -9,9 +9,6 @@ import { IMAGES_PATH } from "./../constants/paths.constants.json";
 //Data
 import data from "./../data/data.json";
 
-//Styles
-import "./../sass/views/HomeView.scss";
-
 class Home extends Component {
   constructor(props) {
     super(props);
